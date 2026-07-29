@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MerryJay · Luxury Event Place</title>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">M</span>
+        Merry<span>Jay</span>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#booking">Booking</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Welcome to <span>MerryJay</span> <br>Event Place and hotel</h1>
+        <p>Luxury Accommodation &amp; Memorable Event Experiences in a serene environment.</p>
+        <div class="hero-buttons">
+          <a href="#booking" class="btn btn-gold">
+            <i class="fas fa-bed"></i> Book a Room
+          </a>
+          <a href="#events" class="btn btn-outline">
+            <i class="fas fa-calendar-check"></i> Book an Event
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-number" data-count="150">0</div>
+            <div class="stat-label">Luxury Rooms</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number" data-count="500">0</div>
+            <div class="stat-label">Events Hosted</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number" data-count="12">0</div>
+            <div class="stat-label">Years of Excellence</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <!-- <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=400&fit=crop" alt="MerryJay Luxury Hotel" /> -->
+                 <div class="hero-image-slider">
+          <img src="images/m10.jpg" alt="Merryjay" class="hero-slide-img active" />
+          <img src="images/m12.jpg" alt="Merryjay" class="hero-slide-img" />
+          <img src="images/m8.jpg" alt="Merryjay" class="hero-slide-img" />
+          <img src="images/m3.jpg" alt="Merryjay" class="hero-slide-img" />
+          <img src="images/m7.jpg" alt="Merryjay" class="hero-slide-img" />
+        </div>
+        <!-- Navigation Arrows -->
+        <!-- <button class="slide-arrow slide-prev" id="slidePrev"><i class="fas fa-chevron-left"></i></button>
+        <button class="slide-arrow slide-next" id="slideNext"><i class="fas fa-chevron-right"></i></button> -->
+        <!-- Dots -->
+        <div class="slide-dots" id="slideDots"></div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+   <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image">
+          <div class="about-image-stack">
+            <img src="images/m11.jpg" alt="About MerryJay 1" class="about-stack-img active" data-index="0" />
+            <img src="images/m12.jpg" alt="About MerryJay 2" class="about-stack-img" data-index="1" />
+            <img src="images/m13.jpg" alt="About MerryJay 3" class="about-stack-img" data-index="2" />
+            <img src="images/m14.jpg" alt="About MerryJay 4" class="about-stack-img" data-index="3" />
+            <img src="images/m5.jpg" alt="About MerryJay 5" class="about-stack-img" data-index="4" />
+          </div>
+          <!-- Optional: subtle counter -->
+      
+        </div>
+        <div class="about-content">
+          <h2 class="section-title">About Us</h2>
+          <p class="section-sub" style="margin-top: 50px;">Merryjay Engineering Limited is an indigenous Nigerian powerhouse in engineering, construction, and technical services. For over a decade, we have built our reputation on precision,delivering complex electrical/mechanical installations and civil projects across Ota, Lagos, and beyond.
+
+          </p>
+          <p class="section-sub">Located in a serene environment, MerryJay Event Place provides luxurious rooms, premium event halls, and excellent customer service for weddings, birthdays, conferences, and vacations.</p>
+          <a href="#about-full" class="btn">Learn More <i class="fas fa-arrow-right"></i></a>
+          <div class="features">
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Premium Service</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Luxury Comfort</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Affordable Rates</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>24/7 Support</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE US ===== -->
+  <section class="section bg-light">
+    <div class="container">
+      <h2 class="section-title center">Why Choose Us</h2>
+      <p class="section-sub center">Experience the difference with our world-class amenities and services</p>
+      <div class="card-grid">
+        <div class="card why-card">
+          <div class="icon-wrapper"><i class="fas fa-bed"></i></div>
+          <h4>Luxury Rooms</h4>
+          <p>Elegantly designed rooms with premium furnishings and breathtaking views</p>
+        </div>
+        <div class="card why-card">
+          <div class="icon-wrapper"><i class="fas fa-tag"></i></div>
+          <h4>Affordable Prices</h4>
+          <p>Competitive rates without compromising on quality or comfort</p>
+        </div>
+        <div class="card why-card">
+          <div class="icon-wrapper"><i class="fas fa-bolt"></i></div>
+          <h4>24/7 Electricity</h4>
+          <p>Uninterrupted power supply with backup generators and solar systems for your comfort. </p>
+        </div>
+        <div class="card why-card">
+          <div class="icon-wrapper"><i class="fas fa-wifi"></i></div>
+          <h4>Free WiFi</h4>
+          <p>High-speed internet access throughout the property</p>
+        </div>
+        <div class="card why-card">
+          <div class="icon-wrapper"><i class="fas fa-car"></i></div>
+          <h4>Secure Parking</h4>
+          <p>Ample parking space with 24/7 security surveillance</p>
+        </div>
+        <div class="card why-card">
+          <div class="icon-wrapper"><i class="fas fa-utensils"></i></div>
+          <h4>Restaurant &amp; Bar</h4>
+          <p>Fine dining experience with international and local cuisine</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED ROOMS ===== -->
+  <section class="section" id="rooms">
+    <div class="container">
+      <h2 class="section-title">Featured Rooms</h2>
+      <p class="section-sub">Discover our luxurious accommodations designed for your comfort</p>
+      
+      <!-- Room Filter -->
+      <div class="filter-container">
+        <label for="roomFilter"><i class="fas fa-filter"></i> Filter:</label>
+        <select id="roomFilter">
+          <option value="all">All Rooms</option>
+          <option value="low">Under NGN 30,000</option>
+          <option value="high">NGN 35,000 &amp; above</option>
+        </select>
+      </div>
+
+      <div class="card-grid" id="roomGrid">
+        <div class="card" data-price="20">
+          <div class="card-image">
+            <img src="images/h2.jpg" alt="Executive Room" />
+            <span class="card-badge">Popular</span>
+          </div>
+          <div class="card-body">
+            <h4>Executive Room</h4>
+            <div class="price">NGN 15,000 <small>/ night</small></div>
+            <p>Spacious room with queen bed, work desk, and city views</p>
+            <div class="amenities">
+              <span><i class="fas fa-bed"></i> Queen</span>
+              <span><i class="fas fa-tv"></i> TV</span>
+              <span><i class="fas fa-snowflake"></i> AC</span>
+              <span><i class="fas fa-wifi"></i> WiFi</span>
+            </div>
+            <a href="#booking" class="btn btn-gold btn-sm">Book Now <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="card" data-price="20">
+          <div class="card-image">
+            <img src="images/h1.jpg" alt="Deluxe Room" />
+            <span class="card-badge">Luxury</span>
+          </div>
+          <div class="card-body">
+            <h4>Deluxe Room</h4>
+            <div class="price">NGN 25,000 <small>/ night</small></div>
+            <p>King bed with balcony, bathtub, and panoramic views</p>
+            <div class="amenities">
+              <span><i class="fas fa-bed"></i> King</span>
+              <span><i class="fas fa-tv"></i> TV</span>
+              <span><i class="fas fa-snowflake"></i> AC</span>
+              <span><i class="fas fa-bath"></i> Bathtub</span>
+            </div>
+            <a href="#booking" class="btn btn-gold btn-sm">Book Now <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="card" data-price="35">
+          <div class="card-image">
+            <img src="images/h3.jpg" alt="Family Suite" />
+            <span class="card-badge">Family</span>
+          </div>
+          <div class="card-body">
+            <h4>Family Suite</h4>
+            <div class="price">NGN 35,000<small>/ night</small></div>
+            <p>Two bedrooms, living area, kitchenette, perfect for families</p>
+            <div class="amenities">
+              <span><i class="fas fa-bed"></i> 2 Beds</span>
+              <span><i class="fas fa-tv"></i> TV</span>
+              <span><i class="fas fa-snowflake"></i> AC</span>
+              <span><i class="fas fa-utensils"></i> Kitchen</span>
+            </div>
+            <a href="#booking" class="btn btn-gold btn-sm">Book Now <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+      
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EVENT SPACES ===== -->
+  <section class="section bg-light" id="events">
+    <div class="container">
+      <h2 class="section-title center">Event Spaces</h2>
+      <p class="section-sub center">Perfect venues for every occasion, from intimate gatherings to grand celebrations</p>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/m5.jpg" alt="Wedding Hall" />
+            <span class="card-badge">Popular</span>
+          </div>
+          <div class="card-body">
+            <h4><i class="fas fa-ring" style="color: #C9A227; margin-right: 8px;"></i> Wedding Hall</h4>
+            <h4><i class="fa-solid fa-naira-sign" style="color: #C9A227; margin-right: 8px;"></i>Price: NGN 1,000,000</h4>
+            <p>Elegant hall with chandeliers, stage, and seating for 500-600 guests</p>
+            <div class="amenities">
+              <span><i class="fas fa-users"></i> 500-600 cap</span>
+              <span><i class="fas fa-snowflake"></i> AC</span>
+              <span><i class="fas fa-lightbulb"></i> Lighting</span>
+            </div>
+            <a href="https://wa.me/2349036248474?text=Hello%2C%20I%20would%20like%20to%20book%20for%20a%20wedding%20event." class="btn btn-sm">Book Now</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <img src="images/m16.jpg" alt="Conference Hall" />
+          </div>
+          <div class="card-body">
+            <h4><i class="fas fa-users" style="color: #C9A227; margin-right: 8px;"></i> Burial Ceremonies</h4>
+              <h4><i class="fa-solid fa-naira-sign" style="color: #C9A227; margin-right: 8px;"></i>Price: NGN 1,200,000</h4>
+            <p>Modern conference facilities with AV equipment for 500-600 attendees</p>
+            <div class="amenities">
+              <span><i class="fas fa-users"></i> 500-600 cap</span>
+              <span><i class="fas fa-microphone"></i> AV</span>
+              <span><i class="fas fa-wifi"></i> WiFi</span>
+            </div>
+            <a href="https://wa.me/2349036248474?text=Hello%2C%20I%20would%20like%20to%20book%20for%20a%20burial%20event." class="btn btn-sm">Book Now</a>
+          </div>
+        </div>
+
+  
+
+        <div class="card">
+          <div class="card-image">
+            <img src="images/m11.jpg" alt="Birthday Hall" />
+          </div>
+          <div class="card-body">
+            <h4><i class="fas fa-birthday-cake" style="color: #C9A227; margin-right: 8px;"></i> Birthday Hall</h4>
+  <h4><i class="fa-solid fa-naira-sign" style="color: #C9A227; margin-right: 8px;"></i>Price: NGN 1,000,000</h4>
+            <p>Cozy and vibrant space for birthday parties and small gatherings</p>
+            <div class="amenities">
+              <span><i class="fas fa-users"></i> 500-600 cap</span>
+              <span><i class="fas fa-snowflake"></i> AC</span>
+              <span><i class="fas fa-music"></i> Sound</span>
+            </div>
+            <a href="https://wa.me/2349036248474?text=Hello%2C%20I%20would%20like%20to%20book%20for%20a%20birthday%20hall." class="btn btn-sm">Book Now</a>
+          </div>
+        </div>
+
+          <div class="card">
+          <div class="card-image">
+            <img src="images/m6.jpg" alt="Outdoor Garden" />
+          </div>
+          <div class="card-body">
+            <h4><i class="fas fa-tree" style="color: #C9A227; margin-right: 8px;"></i> Other events</h4>
+            <h4><i class="fa-solid fa-naira-sign" style="color: #C9A227; margin-right: 8px;"></i> Price: NGN 1,000,000</h4>
+
+            <p>Beautiful landscaped garden perfect for cocktail parties and outdoor events</p>
+            <div class="amenities">
+              <span><i class="fas fa-users"></i> 500-600 cap</span>
+              <span><i class="fas fa-umbrella"></i> Shaded</span>
+              <span><i class="fas fa-music"></i> Sound</span>
+            </div>
+            <a href="https://wa.me/2349036248474?text=Hello%2C%20I%20would%20like%20to%20book%20for%20an%20other%20event." class="btn btn-sm">Book Now</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EVENT PACKAGES ===== -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title center">Event Packages</h2>
+      <p class="section-sub center">Choose the perfect package for your special occasion</p>
+      <div class="packages-grid">
+        <div class="package-card">
+          <h3 class="package-name">Silver</h3>
+          <div class="package-price">NGN1,000,000</div>
+          <ul>
+            <li><i class="fas fa-check"></i> 7 hours venue rental</li>
+            <li><i class="fas fa-check"></i> Basic decoration</li>
+            <li><i class="fas fa-check"></i> Standard sound system</li>
+            <li><i class="fas fa-check"></i> 500 - 600 guest capacity</li>
+          </ul>
+          <a href="#booking" class="btn btn-sm">Choose Package</a>
+        </div>
+
+        <div class="package-card popular">
+          <span class="popular-badge">Most Popular</span>
+          <h3 class="package-name">Gold</h3>
+          <div class="package-price">NGN 1,200,000</div>
+          <ul>
+            <li><i class="fas fa-check"></i> 7 hours venue rental</li>
+            <li><i class="fas fa-check"></i> Premium decoration</li>
+            <li><i class="fas fa-check"></i> Professional sound &amp; lighting</li>
+            <li><i class="fas fa-check"></i> 500 - 600 guest capacity</li>
+        
+          </ul>
+          <a href="#booking" class="btn btn-gold btn-sm">Choose Package</a>
+        </div>
+
+        <div class="package-card">
+          <h3 class="package-name">Platinum</h3>
+          <div class="package-price">NGN 1,000,000</div>
+          <ul>
+            <li><i class="fas fa-check"></i> 7 hours venue rental (12pm - 7pm)</li>
+            <li><i class="fas fa-check"></i> Luxury decoration &amp; flowers</li>
+            <li><i class="fas fa-check"></i> Premium AV &amp; lighting</li>
+            <li><i class="fas fa-check"></i> 500 - 600 guest capacity</li>
+            <!-- <li><i class="fas fa-check"></i> Full catering &amp; bar</li> -->
+            <li><i class="fas fa-check"></i> Event coordinator</li>
+          </ul>
+          <a href="#booking" class="btn btn-sm">Choose Package</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="section bg-light" id="gallery">
+    <div class="container">
+      <h2 class="section-title center">Gallery</h2>
+      <p class="section-sub center">Explore our beautiful spaces and experiences</p>
+      
+      <!-- Gallery Categories -->
+      <div class="gallery-categories">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="rooms">Rooms</button>
+        <button class="filter-btn" data-filter="events">Events</button>
+        <button class="filter-btn" data-filter="outdoor">Outdoor</button>
+        <button class="filter-btn" data-filter="wedding">Wedding</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item" data-category="rooms">
+          <img src="images/h1.jpg" alt="Luxury Room" />
+          <div class="overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item" data-category="rooms">
+          <img src="images/h2.jpg" alt="Deluxe Room" />
+          <div class="overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item" data-category="rooms">
+          <img src="images/h3.jpg" alt="Wedding Setup" />
+          <div class="overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item" data-category="outdoor">
+          <img src="images/m7.jpg" alt="Wedding Ceremony" />
+          <div class="overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item" data-category="outdoor">
+          <img src="images/m8.jpg" alt="Outdoor Garden" />
+          <div class="overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item" data-category="events">
+          <img src="images/m5.jpg" alt="Conference" />
+          <div class="overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item" data-category="events">
+          <img src="images/m11.jpg" alt="Outdoor Event" />
+          <div class="overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item" data-category="wedding">
+          <img src="images/m10.jpg" alt="Wedding Reception" />
+          <div class="overlay"><i class="fas fa-expand"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title center">What Our Guests Say</h2>
+      <p class="section-sub center">Real experiences from our valued guests</p>
+      <div class="testimonial-slider" id="testimonialSlider">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"Amazing hospitality! Everything was perfect from check-in to check-out. The staff went above and beyond to make our stay memorable."</p>
+        <p class="author">Sarah Johnson</p>
+        <p class="author-role">Wedding Guest</p>
+        <div class="testimonial-dots">
+          <button class="dot active" data-index="0"></button>
+          <button class="dot" data-index="1"></button>
+          <button class="dot" data-index="2"></button>
+          <button class="dot" data-index="3"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 3D ANIMATED TEXT SECTION (Replaces Booking Form) ===== -->
+  <section class="section" id="booking" style="background: linear-gradient(135deg, #0F4C5C 0%, #0a2a34 100%); padding: 80px 0; overflow: hidden;">
+    <div class="container">
+      <h2 class="section-title center" style="color: #FFFFFF;">Book Your Experience</h2>
+      <p class="section-sub center" style="color: rgba(255,255,255,0.7);">Luxury awaits you at MerryJay Event Place</p>
+      
+      <div class="text-3d-wrapper">
+        <div class="text-3d-container">
+          <!-- 3D Text Layers -->
+          <div class="text-3d-layer text-3d-layer-1">MERRYJAY</div>
+          <div class="text-3d-layer text-3d-layer-2">MERRYJAY</div>
+          <div class="text-3d-layer text-3d-layer-3">MERRYJAY</div>
+          <div class="text-3d-layer text-3d-layer-4">MERRYJAY</div>
+          <div class="text-3d-layer text-3d-layer-5">MERRYJAY</div>
+          <div class="text-3d-layer text-3d-layer-6">MERRYJAY</div>
+          <div class="text-3d-layer text-3d-layer-7">MERRYJAY</div>
+          <div class="text-3d-layer text-3d-layer-8">MERRYJAY</div>
+          <div class="text-3d-layer text-3d-layer-9">MERRYJAY</div>
+          <div class="text-3d-layer text-3d-layer-10">MERRYJAY</div>
+          <div class="text-3d-layer text-3d-layer-front">MERRYJAY</div>
+        </div>
+      </div>
+      
+      <div class="text-3d-sub">
+        <p style="color: rgba(255,255,255,0.6); font-size: 1.1rem; text-align: center; max-width: 600px; margin: 30px auto 0;">
+          <i class="fas fa-phone" style="color: #C9A227; margin-right: 10px;"></i> 
+          Call us: +234 903 624 8474 &nbsp;|&nbsp; 
+          <i class="fas fa-envelope" style="color: #C9A227; margin-left: 20px; margin-right: 10px;"></i> 
+          reservations@merryjay.com
+        </p>
+        <div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px; flex-wrap: wrap;">
+          <a href="#rooms" class="btn btn-gold">
+            <i class="fas fa-bed"></i> Browse Rooms
+          </a>
+          <a href="#events" class="btn btn-outline">
+            <i class="fas fa-calendar-check"></i> View Events
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION (Replaced with 3D Text) ===== -->
+  <section class="section" id="contact" style="background: #F8F9FA; padding: 60px 0;">
+    <div class="container">
+      <div class="contact-3d-wrapper">
+        <div class="contact-3d-left">
+          <h2 class="section-title" style="font-size: 2.8rem;">Get In Touch</h2>
+          <p style="color: #666; font-size: 1.1rem; max-width: 480px; line-height: 1.8;">We'd love to hear from you. Reach out to us anytime for inquiries, bookings, or special requests.</p>
+          
+          <div class="contact-3d-items">
+            <div class="contact-3d-item">
+              <div class="contact-3d-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <h4>Phone</h4>
+                <p>(+234)903 624 8474</p>
+                <span>Available 24/7</span>
+              </div>
+            </div>
+            <div class="contact-3d-item">
+              <div class="contact-3d-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <h4>Email</h4>
+                <p>info@merryjay.com</p>
+                <span>We respond within 24hrs</span>
+              </div>
+            </div>
+            <div class="contact-3d-item">
+              <div class="contact-3d-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <h4>Address</h4>
+                <p>106, Ijoko Road</p>
+                <span>Ota 112104,Ogun State</span>
+              </div>
+            </div>
+            <div class="contact-3d-item">
+              <div class="contact-3d-icon"><i class="fas fa-clock"></i></div>
+              <div>
+                <h4>Working Hours</h4>
+                <p>Mon - Sun: 24/7</p>
+                <span>Open all year round</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-3d-right">
+          <div class="contact-text-3d">
+            <span class="contact-char" style="--i:0;">M</span>
+            <span class="contact-char" style="--i:1;">E</span>
+            <span class="contact-char" style="--i:2;">R</span>
+            <span class="contact-char" style="--i:3;">R</span>
+            <span class="contact-char" style="--i:4;">Y</span>
+            <span class="contact-char" style="--i:5;">J</span>
+            <span class="contact-char" style="--i:6;">A</span>
+            <span class="contact-char" style="--i:7;">Y</span>
+          </div>
+          <div class="contact-text-sub">
+            <p>Luxury • Comfort • Excellence</p>
+            <div class="contact-social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="contact-cta">
+            <a href="#booking" class="btn btn-gold btn-lg">
+              <i class="fas fa-calendar-plus"></i> Book Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MAP SECTION ===== -->
+<!-- ===== MAP SECTION with responsive padding ===== -->
+<!-- <section class="section" id="map" style="background: #F8F9FA; padding: 40px 0;">
+  <div class="container">
+    <div class="map-responsive-wrapper">
+      <div class="map-container-rounded">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77443.9586972655!2d3.219067869443073!3d6.724028114158402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b99006fb3a185%3A0x3a74bc9cb6e729a8!2sMerryJay%20Events%20and%20Hotels!5e0!3m2!1sen!2sng!4v1783859790519!5m2!1sen!2sng" 
+          style="border:0; width:100%; height:100%;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section> -->
+  
+<!-- ===== MAP SECTION ===== -->
+<section id="map" style="background: #F8F9FA; padding: 30px 0; display: block; width: 100%;">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 15px; width: 100%; box-sizing: border-box;">
+    <div style="position: relative; width: 100%; height: 420px; min-height: 280px; overflow: hidden; border-radius: 16px; box-shadow: 0 8px 30px rgba(0,0,0,0.12); background: #e8e8e8;">
+      
+      <!-- Mobile: taller aspect ratio to show the marker better -->
+      <iframe 
+        src="https://www.google.com/maps/embed/v1/place?q=MerryJay+Events+and+Hotels+Ota&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&zoom=17&maptype=roadmap" 
+        style="border:0; width:100%; height:100%; min-height:280px; position:absolute; top:0; left:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+      
+    </div>
+  </div>
+</section>
+<!-- ===== CTA SECTION ===== -->
+  <section class="section cta-section">
+    <div class="container">
+      <h2>Ready to Make Unforgettable Memories?</h2>
+      <p>Book your stay or event with us today and experience luxury like never before.</p>
+      <a href="#booking" class="btn btn-gold btn-lg">
+        <i class="fas fa-calendar-plus"></i> Book Now
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="brand">
+          <h3>Merry<span>Jay</span></h3>
+          <p>Luxury accommodation and premier event spaces in a serene environment. Creating unforgettable experiences since 2014.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/merryjayevents?utm_source=qr"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.tiktok.com/@merryjay.events.place?_r=1&_t=ZS-98DqWqTXlfW"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#rooms">Rooms</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#booking">Booking</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Wedding Planning</a></li>
+            <li><a href="#">Conference Setup</a></li>
+            <li><a href="#">Catering Services</a></li>
+            <li><a href="#">Event Decoration</a></li>
+            <li><a href="#">Audio Visual</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Newsletter</h4>
+          <p style="margin-bottom: 12px;">Subscribe for special offers and updates</p>
+          <div class="newsletter">
+            <input type="email" placeholder="Your email address" />
+            <button class="btn btn-gold" style="width: 100%; justify-content: center; padding: 12px;">
+              <i class="fas fa-envelope"></i> Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 MerryJay Event Place. All rights reserved.</p>
+        <p style="margin-top: 4px; font-size: 0.8rem; color: #555;">
+        
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- ===== FLOATING WHATSAPP ===== -->
+  <a href="https://wa.me/2349036248474?text=Hello%2C%20I%20would%20like%20to%20make%20enquiries." class="whatsapp-float" target="_blank" rel="noopener">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ===== EXTERNAL JAVASCRIPT ===== -->
+  <script src="app.js"></script>
+</body>
+</html>
