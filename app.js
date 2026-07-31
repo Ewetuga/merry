@@ -679,7 +679,7 @@ galleryItemsLightbox.forEach(function(item) {
     whatsappBtn.addEventListener('click', function(e) {
       // You can customize the WhatsApp message
       const message = encodeURIComponent('Hello! I would like to inquire about booking at MerryJay Event Place.');
-      this.href = 'https://wa.me/1234567890?text=' + message;
+      this.href = 'https://wa.me/2347049056270?text=' + message;
     });
   }
 
@@ -886,4 +886,68 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
       }
+});
+
+// ===== VIDEO SHOWCASE INTERACTION =====
+document.addEventListener('DOMContentLoaded', function() {
+  const videoContainer = document.querySelector('.video-container');
+  const video = videoContainer ? videoContainer.querySelector('video') : null;
+  const playOverlay = videoContainer ? videoContainer.querySelector('.video-play-overlay') : null;
+
+  if (videoContainer && video) {
+    // Play/Pause on container click
+    videoContainer.addEventListener('click', function(e) {
+      // Don't toggle if clicking on video controls
+      if (e.target.tagName === 'VIDEO') return;
+      
+      if (video.paused) {
+        video.play();
+        videoContainer.classList.add('playing');
+        videoContainer.classList.remove('loading');
+      } else {
+        video.pause();
+        videoContainer.classList.remove('playing');
+      }
+    });
+
+    // Show loading state
+    video.addEventListener('loadstart', function() {
+      videoContainer.classList.add('loading');
+    });
+
+    video.addEventListener('canplay', function() {
+      videoContainer.classList.remove('loading');
+    });
+
+    // Remove overlay when video starts playing
+    video.addEventListener('play', function() {
+      videoContainer.classList.add('playing');
+    });
+
+    video.addEventListener('pause', function() {
+      videoContainer.classList.remove('playing');
+    });
+
+    // Handle video ended
+    video.addEventListener('ended', function() {
+      videoContainer.classList.remove('playing');
+      // Optional: Reset to beginning
+      video.currentTime = 0;
+    });
+
+    // Autoplay on mobile - only if user has interacted with the page
+    // This is a fallback for when autoplay is blocked
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            // Video is visible, but don't autoplay - let user click
+            // We just preload the video
+            video.preload = 'metadata';
+          }
+        });
+      }, { threshold: 0.1 });
+      observer.observe(videoContainer);
+    }
+  }
 });
