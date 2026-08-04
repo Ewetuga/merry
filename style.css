@@ -406,6 +406,7 @@ img {
 }
 
 /* Alternative: Make it even bigger on larger screens */
+
 @media (min-width: 1400px) {
   .hero-image img {
     max-width: 720px;
@@ -1536,6 +1537,7 @@ footer .footer-bottom {
   align-items: center;
   padding: 20px 0;
   perspective: 800px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .text-3d-container {
